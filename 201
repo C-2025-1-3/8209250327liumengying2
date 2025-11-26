@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main() {
+	char i;
+	cin >> i;
+	if ('a' < i < 'z') {
+		cout << char(i - 32);
+	}
+	else {
+		cout << i + 1;
+	}
+	return 0;
+}
