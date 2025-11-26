@@ -20,9 +20,9 @@ int main() {
 			others++;
 		}
 	}
-	cout << "Ӣ����ĸ:" << letters << endl;
-	cout << "�����ַ�:" << digits << endl;
-	cout << "�ո�:" << spaces << endl;
-	cout << "�����ַ�:" << others << endl;
+	cout << "letters:" << letters << endl;
+	cout << "digits:" << digits << endl;
+	cout << "spaces:" << spaces << endl;
+	cout << "others:" << others << endl;
 	return 0;
 }
