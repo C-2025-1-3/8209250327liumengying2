@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a, b;
+	int e;
+	cin >> a >> b;
+	int i = a;
+	int j = b;
+	while (a % b != 0) {
+		e = a % b;
+		b = e;
+	}
+	cout << "greatest common divisior:" << b << endl;
+	cout << "lovest common multiple:" << i * j / b;
+	return 0;
+}
