@@ -1,0 +1,28 @@
+#include<iostream>
+#include<string>
+#include<cctype>
+using namespace std;
+int main() {
+	string input;
+	int letters = 0, spaces = 0, digits = 0, others = 0;
+	getline(cin, input);
+	for (char c : input) {
+		if (isalpha(c)) {
+			letters++;
+		}
+		else if (isdigit(c)) {
+			digits++;
+		}
+		else if (isspace(c)) {
+			spaces++;
+		}
+		else {
+			others++;
+		}
+	}
+	cout << "Ӣ����ĸ:" << letters << endl;
+	cout << "�����ַ�:" << digits << endl;
+	cout << "�ո�:" << spaces << endl;
+	cout << "�����ַ�:" << others << endl;
+	return 0;
+}
