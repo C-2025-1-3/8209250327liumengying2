@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int a = 2;
+	int sum = 0;
+	int i = 1;
+	for (i;; i++) {
+		if (a <= 100) {
+			a *= 2;
+		}
+		else {
+			break;
+		}
+		sum += a;
+	}
+	double average = 1.0 * sum * 0.8 / i;
+	cout << "average:" << average;
+	return 0;
+}
