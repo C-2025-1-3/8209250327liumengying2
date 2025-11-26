@@ -1,1 +1,19 @@
-
+#include<iostream>
+using namespace std;
+float squareroot(float x,float n) {
+	float y;
+	y = 1.0 / 2 * (x + n / x);
+	if (fabs(y - x) < 0.00001)
+	   return y;
+	else
+	return squareroot(y, n);
+}
+int main()
+{
+	float a;
+	cin >> a;
+	float m;
+	m = a;
+	cout << squareroot(m, a);
+	return 0;
+}
